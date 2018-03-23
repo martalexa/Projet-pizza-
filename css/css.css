@@ -1,0 +1,38 @@
+#titre{
+	font-size: 18pt;
+}
+
+.btnGroup .btnHoraire {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.btnGroup:hover .btnHoraire:hover {
+	background-color: #888
+}
+
+.btnNext{
+	margin-top: 10px;
+	width: 100%;
+}
+
+.carte{
+	width: 100%;
+}
+
+.groupPanier .itemPanier{
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.groupe1{
+	
+}
