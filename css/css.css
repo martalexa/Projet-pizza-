@@ -12,6 +12,10 @@ h2{
    display: flex;
    justify-content: space-around;
 }
+.phraseIntro{
+   text-align: center;
+   font-size:1.2em;
+}
 #lien{
    float: right;
    right: 0px;
@@ -20,6 +24,7 @@ h2{
 }
 .conteneurBtn{
     height: 80px;
+    display: flex;
 }
 #sauceTomate{
    height:80px;
@@ -40,20 +45,29 @@ h2{
 #titre{
 	font-size: 18pt;
 }
-
+.btnGroup{
+    display: flex;
+}
 .btnGroup .btnHoraire {
     background-color: #4CAF50; /* Green */
     color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     cursor: pointer;
     border-radius: 0px;
+    flex-grow: 1;
 }
 
 .btnGroup:hover .btnHoraire:hover {
 	background-color: #888
 }
+.btnGroup .active{
+   background-color: #4CAF50;
+}
+.btnGroup .disactive{
+   background-color: grey;;
+}
+
 
 .btnNext{
 	margin-top: 10px;

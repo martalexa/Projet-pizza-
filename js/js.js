@@ -1,24 +1,76 @@
+var elem = document.querySelector('.sidenav');
+ var instance = M.Sidenav.init(elem, "right");
+
+'use strict'
+
+let pizza ={};
+pizza.modules = {};
+
+pizza.modules.actions = (function (){
+
+   function init(){
+
+      // NavBar
+      //$('.sidenav').sidenav();
+
+      // Les modaux
+      $('#modal1').modal();
+      $('#modal2').modal();
+      $('#modal3').modal();
+      $('#modal4').modal();
+
+      //Initialise les boutons de la page d'accueil à "Maintenant"
+      $('#btnOption1').css("background-color", "#4CAF50");
+      $('#btnOption2').css("background-color", "grey");
+      $('#btnOption3').css("background-color", "grey");
+
+   }
+
+   function selectionnerMtn(){
+      $('#btnOption1').css("background-color", "#4CAF50");
+      $('#btnOption2').css("background-color", "grey");
+      $('#btnOption3').css("background-color", "grey");
+   }
+
+   function selectionnerPlusTard(){
+      $('#btnOption1').css("background-color", "grey");
+      $('#btnOption2').css("background-color", "#4CAF50");
+      $('#btnOption3').css("background-color", "grey");
+   }
+
+   function selectionnerHeure(){
+      $('#btnOption1').css("background-color", "grey");
+      $('#btnOption2').css("background-color", "grey");
+      $('#btnOption3').css("background-color", "#4CAF50");
+   }
+
+   return {init, selectionnerMtn, selectionnerPlusTard, selectionnerHeure};
+})();
+
+pizza.modules.app = (function (){
+
+   // Initialisation des parametres
+   $(document).ready(function(){
+      pizza.modules.actions.init();
+   });
 
 
-  var elem = document.querySelector('.modal');
-  var instance = M.Modal.init(elem);
+   // Boutons de la page d'accueil (Maintenant, plus tard, 19h)
+   btnOption1.onclick = () =>{
+      pizza.modules.actions.selectionnerMtn();
+   };
+   btnOption2.onclick = () =>{
+      pizza.modules.actions.selectionnerPlusTard();
+   };
+   btnOption3.onclick = () =>{
+      pizza.modules.actions.selectionnerHeure();
+   };
 
-  // Or with jQuery
-  $(document).ready(function(){
-    $('#modal1').modal();
-  });
+})();
 
-  $(document).ready(function(){
-    $('#modal2').modal();
-  });
 
-  $(document).ready(function(){
-    $('#modal3').modal();
-  });
 
-  $(document).ready(function(){
-    $('#modal4').modal();
-  });
+
 
 
 

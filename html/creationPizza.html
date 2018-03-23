@@ -11,16 +11,47 @@
 	  </head>
     	<body>
 
-			<!-- Menu -->
+		  <!-- Menu -->
+        <nav>
+   		    <div class="nav-wrapper">
+   		    	<img src="">
+   		      	<a href="index.html" class="brand-logo" id="titre">Gourmand pizza</a>
+   		      	<a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
+   		      	<ul class="right hide-on-med-and-down">
+   			        <li><a href="#">Compte</a></li>
+   			        <li><a href="#">Contact</a></li>
+   			        <li><a href="#">Ingrédient</a></li>
+   			        <li><a href="#">Deconnexion</a></li>
+   		      	</ul>
+   		    </div>
+   	  	</nav>
 
-			<p>Commandez avant 10 min pour rechercher votre pizza à partir de 19h</p>
+   	  	<ul class="sidenav" id="mobile-demo">
+   		    <li><a href="#">Compte</a></li>
+   		    <li><a href="#">Contact</a></li>
+   		    <li><a href="#">Ingrédient</a></li>
+   		    <li><a href="#">Deconnexion</a></li>
+   	  	</ul>
+
+         <!-- Choix de quelle sorte de pizza prendre -->
+
+         <div class="btnGroup">
+   			<a href="#" class="btn btnHoraire active">Composition</a>
+   			<a href="favorites.html" class="btn btnHoraire disactive">Favorites</a>
+   			<a href="choixPizza.html" class="btn btnHoraire disactive">Classiques</a>
+   		</div>
+
+
+         <!-- Creation de la pizza -->
+
+			<p class="phraseIntro">Commandez avant 15 min et venez<br /> chercher votre pizza à 19h</p>
 
 			<div class="row">
    			<form class="col s12">
 					<div class="row">
 			        <div class="input-field col s12" color="red">
 						 <i class="material-icons prefix" >local_pizza</i>
-			          <input placeholder="Pizza du chef" id="nomPizza" type="text" class="validate">
+			          <input placeholder="La pizza du chef" id="nomPizza" type="text" class="validate">
 			          <label for="first_name">Nom de la pizza</label>
 			        </div>
 		      	</div>
@@ -48,86 +79,9 @@
 		 </div>
 
 
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="../js/materialize.min.js"></script>
-		<script type="text/javascript" src="../js/js.js"></script>
+       <!-- Import de JavaScript -->
+       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+       <script type="text/javascript" src="../js/materialize.min.js"></script>
+ 		<script type="text/javascript" src="../js/js.js"></script>
     </body>
   </html>
-
-
-
-
-<!--
-<div id="sauceTomate" style="height:50px; width:50px; background-color:red; display:inline-block; ">
-	Sauce tomate
-</div>
-<div id="sauceCreme" style="height:50px; width:50px; background-color:#EEEEAA; display:inline-block; ">
-	Sauce creme
-</div>
-
-<div id="pizza" style="height:200px; width:200px; background-color:#DDDD55;">
-	Pizza
-</div>
-
-<script>
-	/* Les sauces dragables	*/
-
-	// Initialiser les éléments dragables
-	document.querySelector('#sauceTomate').draggable = true;
-	document.querySelector('#sauceCreme').draggable = true;
-
-	// Initialiser les photos du dragage
-	let dragImgTomate = new Image();
-    dragImgTomate.src = 'sauceTomate.png';
-	let dragImgCreme = new Image();
-    dragImgCreme.src = 'sauceCreme.png';
-	let ingredient;
-
-
-
-	// Proprietes de deplacement
-	document.querySelector('#sauceTomate').addEventListener('dragstart', function(e) {
-		e.dataTransfer.setData('text/plain', "Base sauce tomate"); // Text transmis à la réception
-		e.dataTransfer.setDragImage(dragImgTomate, 58, 130); // Image pendant le drop
-	});
-	document.querySelector('#sauceCreme').addEventListener('dragstart', function(e) {
-		e.dataTransfer.setData('text/plain', "Base creme"); // Text transmis à la réception
-		e.dataTransfer.setDragImage(dragImgCreme, 58, 130); // Image pendant le drop
-	});
-
-
-
-	/* La pizza qui accepte le drop */
-
-	let pizza = document.querySelector('#pizza');
-
-	// Indique la une zone du drop
-	pizza.addEventListener('dragover', function(e) {
-		e.preventDefault();
-	});
-
-	//	Style lorsqu'entre dans la zone de drop
-	pizza.addEventListener('dragenter', function() {
-		pizza.style.backgroundColor = '#F9F988';
-	});
-
-	// Style lorsque sort de la zone de drop
-	pizza.addEventListener('dragleave', function() {
-		pizza.style.backgroundColor = '#DDDD55';
-
-	});
-
-	// Ce qu'il se passe quand le drop est fait
-	pizza.addEventListener('drop', function(e) {
-		//Recupere le texte du dragstart
-		ingredient=e.dataTransfer.getData('text/plain');
-
-		// Changement du style en fonction de la couleur
-		if(ingredient=== "Base sauce tomate"){
-			pizza.style.backgroundColor = 'red';
-		}
-		if(ingredient=== "Base creme"){
-			pizza.style.backgroundColor = '#EEEEAA';
-		}
-	});
-</script>-->

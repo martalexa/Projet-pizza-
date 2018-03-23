@@ -11,6 +11,37 @@
 	  </head>
     	<body>
 
+         <!-- Menu -->
+         <nav>
+              <div class="nav-wrapper">
+                <img src="">
+                   <a href="index.html" class="brand-logo" id="titre">Gourmand pizza</a>
+                   <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
+                   <ul class="right hide-on-med-and-down">
+                     <li><a href="#">Compte</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">Ingrédient</a></li>
+                     <li><a href="#">Deconnexion</a></li>
+                   </ul>
+              </div>
+          </nav>
+
+          <ul class="sidenav" id="mobile-demo">
+              <li><a href="#">Compte</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Ingrédient</a></li>
+              <li><a href="#">Deconnexion</a></li>
+          </ul>
+
+          <!-- Choix de quelle sorte de pizza prendre -->
+
+          <div class="btnGroup">
+    			<a href="creationPizza.html" class="btn btnHoraire disactive">Composition</a>
+    			<a href="favorites.html" class="btn btnHoraire disactive">Favorites</a>
+    			<a href="#" class="btn btnHoraire active">Classiques</a>
+    		</div>
+
+          <!-- Choix des pizzas -->
 
          <div class="row">
            <div class="col s12">
@@ -107,7 +138,7 @@
          </div>
         </div>
 
-      <!--JavaScript at end of body for optimized loading-->
+      <!-- Import de JavaScript -->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="../js/materialize.min.js"></script>
 		<script type="text/javascript" src="../js/js.js"></script>
