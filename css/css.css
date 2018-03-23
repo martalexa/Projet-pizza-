@@ -1,0 +1,38 @@
+h2{
+   font-size: 20pt;
+}
+.row{
+   margin:0px;
+}
+.conteneurIngredient{
+   display: block;
+   text-align: center;
+}
+.conteneurIngredients{
+   display: flex;
+   justify-content: space-around;
+}
+#lien{
+   float: right;
+   right: 0px;
+   padding: 0px;
+   margin: 0px;
+}
+.conteneurBtn{
+    height: 80px;
+}
+#sauceTomate{
+   height:80px;
+   width:80px;
+   background-image: url('../medias/sauceTomate.png');
+}
+#sauceCreme{
+   height:80px;
+   width:80px;
+   background-image: url('../medias/sauceCreme.png');
+}
+#pizza{
+   height:180px;
+   width:180px;
+   background-image: url('../medias/baseTomate.png');
+}
