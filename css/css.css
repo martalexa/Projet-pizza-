@@ -34,5 +34,29 @@
 }
 
 .groupe1{
-	
+	margin: 10px;
+	background-color: #eee;
+	padding: 10px;
+}
+
+.groupeMontant{
+	margin: 10px;
+	background-color: #eee;
+}
+
+.groupeEch{
+	margin: 10px;
+	background-color: #eee;
+}
+
+.titrePanier{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.btnValideCommande{
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
 }
