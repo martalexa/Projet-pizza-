@@ -1,26 +1,63 @@
 h2{
    font-size: 20pt;
 }
+nav{
+   background-color: #ef5350;
+}
 .row{
    margin:0px;
 }
-.conteneurIngredient{
-   display: block;
-   text-align: center;
+.btn{
+   background-color: #4CAF50;
+}
+strong{
+   color: #4CAF50;
 }
 .conteneurIngredients{
+   text-align: center;
    display: flex;
    justify-content: space-around;
+}
+#conteneurIngredients, #selectionsIngredient{
+   padding-top:0px;
 }
 .phraseIntro{
    text-align: center;
    font-size:1.2em;
+}
+.titreCard{
+   padding: 1px;
+   padding-left: 30px;
+}
+.ingredientPasSelect{
+   position: relative;
+   top:-5px;
+   border:2px solid grey;
+   height:110px;
+   width:110px;
+   opacity:0;
+   border-radius: 3px;
+}
+.ingredientSelect{
+   opacity:0.3;
+}
+.selectionsIngredient{
+   display:flex;
+   justify-content:space-around;
+}
+.conteneurIngredientSelect{
+   position:absolute;
+   width:100%;
 }
 #lien{
    float: right;
    right: 0px;
    padding: 0px;
    margin: 0px;
+}
+
+#inputNomPizza{
+   margin-bottom: 0px;
 }
 .conteneurBtn{
     height: 80px;
@@ -40,6 +77,15 @@ h2{
    height:180px;
    width:180px;
    background-image: url('../medias/baseTomate.png');
+   background-repeat: no-repeat;
+}
+.btnCreaPizza, .btnCreaPizza>.btn{
+   display: flex;
+   border-radius: 0px;
+   flex-grow: 1;
+}
+ .btnCreaPizza>.btn>i{
+   margin: auto;
 }
 
 #titre{
@@ -65,7 +111,7 @@ h2{
    background-color: #4CAF50;
 }
 .btnGroup .disactive{
-   background-color: grey;;
+   background-color: grey;
 }
 
 

@@ -1,11 +1,8 @@
 <!DOCTYPE html>
   <html>
 	  <head>
-		 <!--Import Google Icon Font-->
 		 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		 <!--Import materialize.css-->
 		 <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
-		 <!--Let browser know website is optimized for mobile-->
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		 <link type="text/css" rel="stylesheet" href="../css/css.css"/>
 	  </head>
@@ -44,27 +41,29 @@
 
          <!-- Creation de la pizza -->
 
-			<p class="phraseIntro">Commandez avant 15 min et venez<br /> chercher votre pizza à 19h</p>
+			<p class="phraseIntro">Commandez votre pizza avant 15 min <br />et venez la chercher à <strong>19h</strong></p>
 
 			<div class="row">
    			<form class="col s12">
-					<div class="row">
-			        <div class="input-field col s12" color="red">
+			        <div class="input-field" id="inputNomPizza">
 						 <i class="material-icons prefix" >local_pizza</i>
 			          <input placeholder="La pizza du chef" id="nomPizza" type="text" class="validate">
 			          <label for="first_name">Nom de la pizza</label>
 			        </div>
-		      	</div>
 				</form>
-			</div>
 
-			<div class="row">
 			   <div class="col s12">
-				  <div class="card">
-					 <div class="card-image">
+				  <div class="card" id="card">
+					 <div id="titreCard">
 						<span><h2>Les bases</h2></span>
 					 </div>
-					 <div class="card-content conteneurIngredients">
+                <div class="conteneurIngredientSelect" >
+                   <div class="card-content selectionsIngredient" id="selectionsIngredient">
+   						 <div class="ingredientPasSelect" id="SelectSauceTomate"></div>
+   						 <div class="ingredientPasSelect" id="SelectSauceCreme"></div>
+   					 </div>
+               </div>
+					 <div class="card-content conteneurIngredients" id="conteneurIngredients">
 						 <div class="conteneurIngredient"><div id="sauceTomate"></div>Sauce tomate</div>
 						 <div class="conteneurIngredient"><div id="sauceCreme"></div>Crème</div>
 					 </div>
@@ -76,7 +75,12 @@
 				  	</div>
 			   </div>
 			 </div>
-		 </div>
+              </div>
+
+          <div class="btnCreaPizza">
+                <a class="btn"><i class="material-icons">shopping_cart</i></a>
+                <a class="btn disabled" id="ingredSuivant"><i class="material-icons">navigate_next</i></a>
+          </div>
 
 
        <!-- Import de JavaScript -->
