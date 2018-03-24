@@ -186,3 +186,8 @@ h2{
   padding: 10px;
   background-color: #f5f5f5;
 }
+
+.itemPizza{
+  border-left: #ffd600 5px solid;
+  margin-top: 5px;
+}
