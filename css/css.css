@@ -87,18 +87,15 @@ h2{
 
 .groupe1{
 	margin: 10px;
-	background-color: #eee;
 	padding: 10px;
 }
 
 .groupeMontant{
 	margin: 10px;
-	background-color: #eee;
 }
 
 .groupeEch{
 	margin: 10px;
-	background-color: #eee;
 }
 
 .nameItem{
@@ -121,13 +118,15 @@ h2{
 
 .addPizza{
 	margin: 10px;
-	background-color: #eee;
 }
 
 .btnValideCommande{
 	width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
+	border-top: 5px;
+	border-radius: 0px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .montantItem{
@@ -148,17 +147,42 @@ h2{
 }
 
 .compteNav{
-	border-left: blue 5px solid;
+	border-left: #0091ea 5px solid;
 }
 
 .contactNav{
-	border-left: yellow 5px solid;
+	border-left: #64dd17 5px solid;
 }
 
 .ingredientNav{
-	border-left: green 5px solid;
+	border-left: #ffd600 5px solid;
 }
 
 .decoNav{
-	border-left: red 5px solid;
+	border-left: #ff3d00 5px solid;
+}
+
+.groupResto{
+	margin: 5px 0px 5px 0px;
+	border-left: #64dd17 5px solid;
+}
+
+#adresse{
+	margin: 0px;
+}
+
+.txtContact{
+	margin: 10px;
+	font-size: 15px;
+}
+
+#nomIng{
+	color: #424242;
+}
+
+.contact{
+  border-left: #0091ea 5px solid;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
 }
