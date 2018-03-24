@@ -125,7 +125,6 @@ strong{
 }
 
 .groupPanier .itemPanier{
-	text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -134,18 +133,27 @@ strong{
 
 .groupe1{
 	margin: 10px;
-	background-color: #eee;
 	padding: 10px;
 }
 
 .groupeMontant{
 	margin: 10px;
-	background-color: #eee;
 }
 
 .groupeEch{
 	margin: 10px;
-	background-color: #eee;
+}
+
+.nameItem{
+	font-weight: bold;
+}
+
+.prixItem{
+	font-weight: 900;
+}
+
+.qteItem{
+
 }
 
 .titrePanier{
@@ -154,8 +162,78 @@ strong{
 	margin-left: 10px;
 }
 
+.addPizza{
+	margin: 10px;
+}
+
 .btnValideCommande{
 	width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
+	border-top: 5px;
+	border-radius: 0px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.montantItem{
+	font-weight: 900;
+}
+
+#btnAdd{
+	width: auto;
+	margin-top: 4px;
+}
+
+.addPizza{
+	font-weight: 900;
+}
+
+.titreEchant{
+	font-weight: bolder;
+}
+
+.compteNav{
+	border-left: #0091ea 5px solid;
+}
+
+.contactNav{
+	border-left: #64dd17 5px solid;
+}
+
+.ingredientNav{
+	border-left: #ffd600 5px solid;
+}
+
+.decoNav{
+	border-left: #ff3d00 5px solid;
+}
+
+.groupResto{
+	margin: 5px 0px 5px 0px;
+	border-left: #64dd17 5px solid;
+}
+
+#adresse{
+	margin: 0px;
+}
+
+.txtContact{
+	margin: 10px;
+	font-size: 15px;
+}
+
+#nomIng{
+	color: #424242;
+}
+
+.contact{
+  border-left: #0091ea 5px solid;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.itemPizza{
+  border-left: #ffd600 5px solid;
+  margin-top: 5px;
 }

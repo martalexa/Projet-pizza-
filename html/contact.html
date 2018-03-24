@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+  <html>
+	  <head>
+		 <!--Import Google Icon Font-->
+		 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		 <!--Import materialize.css-->
+		 <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+		 <!--Let browser know website is optimized for mobile-->
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		 <link type="text/css" rel="stylesheet" href="../css/css.css"/>
+     <meta charset="UTF-8">
+	  </head>
+    	<body>
+
+         <!-- Menu -->
+         <nav>
+              <div class="nav-wrapper">
+                <img src="">
+                   <a href="index.html" class="brand-logo" id="titre">Gourmand pizza</a>
+                   <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
+                   <ul class="right hide-on-med-and-down">
+                     <li><a href="#">Compte</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">Ingrédient</a></li>
+                     <li><a href="#">Deconnexion</a></li>
+                   </ul>
+              </div>
+          </nav>
+
+          <ul class="sidenav" id="mobile-demo">
+            <li class="compteNav"><a href="compte.html"><i class="small material-icons">contacts</i>Compte</a></li>
+            <li class="contactNav"><a href="#"><i class="small material-icons">local_phone</i>Contact</a></li>
+            <li class="ingredientNav"><a href="#"><i class="small material-icons">restaurant_menu</i>Ingrédient</a></li>
+            <li class="decoNav"><a href="#"><i class="small material-icons">settings_power</i>Deconnexion</a></li>
+          </ul>
+
+          <!-- Contenu de la page -->
+
+          <div class="titrePanier">
+            <p>CONTACT</p>
+          </div>
+
+          <div class="txtContact">
+            <i><p>Vous avez à votre disposition un formulaire pour nous contacter pour n'importe quel informations.</p>
+            <p>Nous vous mettons également à disposition les numéros de téléphones et les adresses de nos restaurants</p></i>
+          </div>
+
+          <div class="groupe1 grey lighten-5">
+            <div class="row groupResto">
+              <p class="col s7 itemPanier nameItem"><i class="tiny material-icons">restaurant</i> Restaurant 1 </p>
+              <p class="col s5 itemPanier qteItem"><i class="tiny material-icons">phone</i> 0123456789</p>
+              <p class="col s12" id="adresse"><i class="tiny material-icons">place</i> Adresse blablablablabla resto 1</p>
+            </div>
+            <div class="row groupResto">
+              <p class="col s7 itemPanier nameItem"><i class="tiny material-icons">restaurant</i> Restaurant 2 </p>
+              <p class="col s5 itemPanier qteItem"><i class="tiny material-icons">phone</i> 0123456789</p>
+              <p class="col s12" id="adresse"><i class="tiny material-icons">place</i>Adresse blablablablabla resto 1</p>
+            </div>
+            <div class="row groupResto">
+              <p class="col s7 itemPanier nameItem"><i class="tiny material-icons">restaurant</i> Restaurant 3 </p>
+              <p class="col s5 itemPanier qteItem"><i class="tiny material-icons">phone</i> 0123456789</p>
+              <p class="col s12" id="adresse"><i class="tiny material-icons">place</i>Adresse blablablablabla resto 1</p>
+            </div>
+            <div class="row groupResto">
+              <p class="col s7 itemPanier nameItem"><i class="tiny material-icons">restaurant</i> Restaurant 4 </p>
+              <p class="col s5 itemPanier qteItem"><i class="tiny material-icons">phone</i> 0123456789</p>
+              <p class="col s12" id="adresse"><i class="tiny material-icons">place</i>Adresse blablablablabla resto 1</p>
+            </div>
+            <div class="row groupResto">
+              <p class="col s7 itemPanier nameItem"><i class="tiny material-icons">restaurant</i> Restaurant 5 </p>
+              <p class="col s5 itemPanier qteItem"><i class="tiny material-icons">phone</i> 0123456789</p>
+              <p class="col s12" id="adresse"><i class="tiny material-icons">place</i>Adresse blablablablabla resto 1</p>
+          </div>
+        </div>
+
+        
+        <div>
+        <div class="titrePanier">
+          <p>FORMULAIRE DE CONTACT</p>
+        </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="nom" type="text">
+                  <label for="nom">NOM *</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="prenom" type="text">
+                  <label for="prenom">PRENOM *</label>
+                </div>
+              </div>
+              <div class="input-field col s6">
+                <input id="telephone" type="text">
+                <label for="telephone">TELEPHONE *</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="mail" type="text">
+                <label for="mail">MAIL *</label>
+              </div>
+
+
+              <!--<div class="input-field col s12">
+                <select>
+                  <option value="66" disabled selected>CATEGORIE * </option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Materialize Select</label>
+              </div>
+
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>VOTRE RESTAURANT * </option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Materialize Select</label>
+              </div>-->
+
+
+              <div class="input-field col s12">
+                <input id="message" type="text">
+                <label for="message">MESSAGE *</label>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <a class="waves-effect waves-light btn btnValideCommande modal-trigger" href="accueil.html">Envoyer le message <i class="large material-icons">send</i></a>
+            <a class="waves-effect waves-light btn btnValideCommande modal-trigger red darken-1" href="accueil.html">Retourner au menu <i class="large material-icons">arrow_back</i></a>
+          </div>
+        </div>  
+
+      <!-- Import de JavaScript -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+		<script type="text/javascript" src="../js/js.js"></script>
+    </body>
+  </html>
