@@ -22,19 +22,19 @@
 					 <a href="index.html" class="brand-logo" id="titre">Gourmand pizza</a>
 					 <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
 					 <ul class="right hide-on-med-and-down">
-						<li><a href="#">Compte</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Ingrédient</a></li>
-						<li><a href="#">Deconnexion</a></li>
+						<li><a href="#"><i class="small material-icons">contacts</i>Compte</a></li>
+					  	<li><a href="#"><i class="small material-icons">local_phone</i>Contact</a></li>
+					 	<li><a href="#"><i class="small material-icons">restaurant_menu</i>Ingrédient</a></li>
+			  			<li><a href="#"><i class="small material-icons">settings_power</i>Deconnexion</a></li>
 					 </ul>
 			  </div>
 		 </nav>
 
-		 <ul class="sidenav" id="mobile-demo">
-			  <li><a href="#">Compte</a></li>
-			  <li><a href="#">Contact</a></li>
-			  <li><a href="#">Ingrédient</a></li>
-			  <li><a href="#">Deconnexion</a></li>
+		 <ul class="sidenav menuSideNav" id="mobile-demo">
+			  <li class="compteNav"><a href="#"><i class="small material-icons">contacts</i>Compte</a></li>
+			  <li class="contactNav"><a href="#"><i class="small material-icons">local_phone</i>Contact</a></li>
+			  <li class="ingredientNav"><a href="#"><i class="small material-icons">restaurant_menu</i>Ingrédient</a></li>
+			  <li class="decoNav"><a href="#"><i class="small material-icons">settings_power</i>Deconnexion</a></li>
 		 </ul>
 
 
@@ -45,39 +45,42 @@
 	  	</div>
 
 		<div class="groupe1">
-			<div class="groupPanier">
-				<p class="itemPanier">Pizza 4 fromage</p>
-				<p class="itemPanier"> X 1 </p>
-				<p class="itemPanier"> 7 € </p>
+			<div class="row groupPanier">
+				<p class="col s7 itemPanier nameItem">Pizza 4 fromage</p>
+				<p class="col s2 itemPanier qteItem"> X 1 </p>
+				<p class="col s3 itemPanier prixItem"> 8.00 € </p>
 			</div>
-			<div class="groupPanier">
-				<p class="itemPanier">Pizza 4 fromage</p>
-				<p class="itemPanier"> X 1 </p>
-				<p class="itemPanier"> 7 € </p>
+			<div class="row groupPanier">
+				<p class="col s7 itemPanier nameItem">Pizza 4 fromage</p>
+				<p class="col s2 itemPanier qteItem"> X 2 </p>
+				<p class="col s3 itemPanier prixItem"> 10.00 € </p>
 			</div>
-			<div class="groupPanier">
-				<p class="itemPanier">Pizza 4 fromage</p>
-				<p class="itemPanier"> X 1 </p>
-				<p class="itemPanier"> 7 € </p>
+			<div class="row groupPanier">
+				<p class="col s7 itemPanier nameItem">Pizza 4 fromage</p>
+				<p class="col s2 itemPanier qteItem"> X 1 </p>
+				<p class="col s3 itemPanier prixItem"> 7.00 € </p>
 			</div>
-			<div class="groupPanier">
-				<p class="itemPanier">Nouvelle pizza</p>
-				<a class="btn-floating btn-medium waves-effect waves-light red"><i class="material-icons">add</i></a>
+		</div>
+
+		<div class="addPizza">
+			<div class="row groupPanier">
+				<p class="col s8 itemPanier addPizza">NOUVELLE PIZZA</p>
+				<a class="col s2 btn-floating btn-medium waves-effect waves-light red" id="btnAdd"><i class="material-icons">add</i></a>
 			</div>
 		</div>
 
 		<div class="groupeMontant">
-			<div class="groupPanier">
-				<p class="itemPanier">MONTANT</p>
-				<p class="itemPanier"> 21 € </p>
+			<div class="row groupPanier">
+				<p class="col s9 itemPanier montantItem">MONTANT</p>
+				<p class="col s3 itemPanier prixItem"> 35.00 € </p>
 			</div>
 		</div>
 
 		<div class="groupeEch">
-			<div class="groupPanier">
-				<p class="itemPanier">Echantillons</p>
-				<a class="btn-floating btn-medium waves-effect waves-light red"><i class="material-icons">add</i></a>
-				<a class="btn-floating btn-medium waves-effect waves-light red"><i class="material-icons">add</i></a>
+			<div class="row groupPanier">
+				<p class="col s8 itemPanier titreEchant">Echantillons</p>
+				<a class="col s2 btn-floating btn-medium waves-effect waves-light red" id="btnAdd"><i class="material-icons">add</i></a>
+				<a class="col s2 btn-floating btn-medium waves-effect waves-light red" id="btnAdd"><i class="material-icons">add</i></a>
 			</div>
 		</div>
 

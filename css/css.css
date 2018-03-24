@@ -79,7 +79,6 @@ h2{
 }
 
 .groupPanier .itemPanier{
-	text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -102,14 +101,64 @@ h2{
 	background-color: #eee;
 }
 
+.nameItem{
+	font-weight: bold;
+}
+
+.prixItem{
+	font-weight: 900;
+}
+
+.qteItem{
+
+}
+
 .titrePanier{
 	font-size: 20px;
 	font-weight: bold;
 	margin-left: 10px;
 }
 
+.addPizza{
+	margin: 10px;
+	background-color: #eee;
+}
+
 .btnValideCommande{
 	width: 100%;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.montantItem{
+	font-weight: 900;
+}
+
+#btnAdd{
+	width: auto;
+	margin-top: 4px;
+}
+
+.addPizza{
+	font-weight: 900;
+}
+
+.titreEchant{
+	font-weight: bolder;
+}
+
+.compteNav{
+	border-left: blue 5px solid;
+}
+
+.contactNav{
+	border-left: yellow 5px solid;
+}
+
+.ingredientNav{
+	border-left: green 5px solid;
+}
+
+.decoNav{
+	border-left: red 5px solid;
 }
