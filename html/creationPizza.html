@@ -41,7 +41,7 @@
 
          <!-- Creation de la pizza -->
 
-			<p class="phraseIntro">Commandez votre pizza avant 15 min <br />et venez la chercher à <strong>19h</strong></p>
+			<p class="phraseIntro">Commandez votre pizza avant <strong>15min </strong><br />et venez la chercher à <strong>19h</strong></p>
 
 			<div class="row">
    			<form class="col s12">
@@ -53,25 +53,40 @@
 				</form>
 
 			   <div class="col s12">
-				  <div class="card" id="card">
+               <!-- La base-->
+				  <div class="card" id="conteneurBase">
 					 <div id="titreCard">
-						<span><h2>Les bases</h2></span>
+						<span><h2>La base</h2></span>
 					 </div>
-                <div class="conteneurIngredientSelect" >
-                   <div class="card-content selectionsIngredient" id="selectionsIngredient">
-   						 <div class="ingredientPasSelect" id="SelectSauceTomate"></div>
-   						 <div class="ingredientPasSelect" id="SelectSauceCreme"></div>
-   					 </div>
-               </div>
 					 <div class="card-content conteneurIngredients" id="conteneurIngredients">
 						 <div class="conteneurIngredient"><div id="sauceTomate"></div>Sauce tomate</div>
 						 <div class="conteneurIngredient"><div id="sauceCreme"></div>Crème</div>
 					 </div>
 				  </div>
 
+              <!-- La charcuterie -->
+              <div class="card" id="conteneurChacuterie" style="display:none;">
+					 <div id="titreCard">
+						<span><h2>La charcuterie</h2></span>
+					 </div>
+					 <div class="card-content conteneurIngredients" id="conteneurIngredients">
+						 <div class="conteneurIngredient"><div id="chorizo"></div>Chorizo</div>
+						 <div class="conteneurIngredient"><div id="merguez"></div>Merguez</div>
+					 </div>
+				  </div>
+
 				  <div class="card">
-					 <div class="card-content conteneurIngredients">
-						 <div id="pizza"></div>
+					 <div class="card-content conteneurIngredients" id="conteneurPizza">
+						 <div id="pizza">
+                     <div id="garniturePizza">
+                        <div id="chorizo1" class="displayNone"></div>
+                        <div id="chorizo2" class="displayNone"></div>
+                        <div id="chorizo3" class="displayNone"></div>
+                        <div id="merguez1" class="displayNone"></div>
+                        <div id="merguez2" class="displayNone"></div>
+                        <div id="merguez3" class="displayNone"></div>
+                     </div>
+                  </div>
 				  	</div>
 			   </div>
 			 </div>

@@ -1,5 +1,6 @@
 h2{
-   font-size: 20pt;
+   font-size: 15pt;
+   margin: 12px;
 }
 nav{
    background-color: #ef5350;
@@ -18,12 +19,15 @@ strong{
    display: flex;
    justify-content: space-around;
 }
+#conteneurPizza{
+   padding: 0px;
+}
 #conteneurIngredients, #selectionsIngredient{
    padding-top:0px;
 }
 .phraseIntro{
    text-align: center;
-   font-size:1.2em;
+   font-size:1.1em;
 }
 .titreCard{
    padding: 1px;
@@ -49,6 +53,48 @@ strong{
    position:absolute;
    width:100%;
 }
+#garniturePizza{
+   position: relative;
+}
+#chorizo1, #chorizo2, #chorizo3, #merguez1, #merguez2, #merguez3{
+   height: 30px;
+   width: 30px;
+   position: absolute;
+   background-repeat: no-repeat;
+}
+.displayNone{
+   display: none;
+}
+#chorizo1, #chorizo2, #chorizo3{
+   background-image: url('../medias/chorizoCoupe.png');
+}
+#merguez1, #merguez2, #merguez3{
+   background-image: url('../medias/merguezCoupe.png');
+}
+#chorizo1{
+   top : 30px;
+   left: 90px;
+}
+#chorizo2{
+   top : 80px;
+   left: 55px;
+}
+#chorizo3{
+   top : 70px;
+   left: 110px;
+}
+#merguez1{
+   top : 40px;
+   left: 40px;
+}
+#merguez2{
+   top : 105px;
+   left: 40px;
+}
+#merguez3{
+   top : 100px;
+   left: 100px;
+}
 #lien{
    float: right;
    right: 0px;
@@ -73,11 +119,24 @@ strong{
    width:80px;
    background-image: url('../medias/sauceCreme.png');
 }
+#chorizo{
+   height:80px;
+   width:80px;
+   background-image: url('../medias/chorizo.png');
+}
+#merguez{
+   height:80px;
+   width:80px;
+   background-image: url('../medias/merguez.png');
+}
 #pizza{
-   height:180px;
-   width:180px;
-   background-image: url('../medias/baseTomate.png');
+   height:200px;
+   width:200px;
+   background-image: url('../medias/pate.png');
    background-repeat: no-repeat;
+   padding: 20px;
+   border-radius: 5px;
+   background-position: center
 }
 .btnCreaPizza, .btnCreaPizza>.btn{
    display: flex;
