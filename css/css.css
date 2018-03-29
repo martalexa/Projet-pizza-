@@ -14,20 +14,59 @@ nav{
 strong{
    color: #4CAF50;
 }
+#bodyScroll{
+   overflow: hidden;
+}
 .conteneurIngredients{
    text-align: center;
    display: flex;
    justify-content: space-around;
 }
+.breadcrumb, .breadcrumb::before{
+   color:#bbb;
+}
+.breadEnCours,.breadEnCours::before{
+   color:#4CAF50;
+   font-weight: 500;
+}
+.breadFait{
+   color:#4CAF50;
+   font-weight: 400;
+}
 #conteneurPizza{
    padding: 0px;
 }
+
+/*#breadLegume, #breadLegume::before, #breadFromage, #breadFromage::before, #breadViande, #breadViande::before{
+   color:grey;
+}*/
 #conteneurIngredients, #selectionsIngredient{
    padding-top:0px;
 }
+
 .phraseIntro{
    text-align: center;
-   font-size:1.1em;
+   font-size:1em;
+}
+#nomPizza{
+   font-size: 0.8em;
+   height: 28px;
+}
+#iconPizza{
+   top: -2px;
+}
+#cheminPizza a, #cheminPizza a::before{
+   font-size:1em;
+}
+#cheminPizza div{
+   text-align: center;
+}
+#cheminPizza {
+      background-color: #FFF;
+      box-shadow: none;
+}
+#conteneurBase{
+   margin-bottom: 0px;
 }
 .titreCard{
    padding: 1px;
@@ -103,7 +142,7 @@ strong{
 }
 
 #inputNomPizza{
-   margin-bottom: 0px;
+   margin: 0px;
 }
 .conteneurBtn{
     height: 80px;
@@ -170,7 +209,7 @@ strong{
    background-color: #4CAF50;
 }
 .btnGroup .disactive{
-   background-color: grey;
+   background-color: #81c784;
 }
 
 

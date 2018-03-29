@@ -6,7 +6,7 @@
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		 <link type="text/css" rel="stylesheet" href="../css/css.css"/>
 	  </head>
-    	<body>
+    	<body id="bodyScroll">
 
 		  <!-- Menu -->
         <nav>
@@ -40,15 +40,25 @@
 
 
          <!-- Creation de la pizza -->
+         <div style="margin-top:20px;">
+            <div class="nav-wrapper" id="cheminPizza">
+              <div class="col s12">
+                  <a href="#!" class="breadEncours" id="breadBase">Base</a>
+                  <a href="#!" class="breadcrumb" id="breadViande">Viande</a>
+                  <a href="#!" class="breadcrumb" id="breadLegume">Légumes</a>
+                  <a href="#!" class="breadcrumb" id="breadFromage">Fromage</a>
+                  <p></p>
+               </div>
+            </div>
+         </div>
 
-			<p class="phraseIntro">Commandez votre pizza avant <strong>15min </strong><br />et venez la chercher à <strong>19h</strong></p>
+          <p class="phraseIntro">Commandez votre pizza avant <strong>15min </strong><br />et venez la chercher à <strong>19h</strong></p>
 
 			<div class="row">
    			<form class="col s12">
 			        <div class="input-field" id="inputNomPizza">
-						 <i class="material-icons prefix" >local_pizza</i>
+						 <i class="material-icons prefix" id="iconPizza">local_pizza</i>
 			          <input placeholder="La pizza du chef" id="nomPizza" type="text" class="validate">
-			          <label for="first_name">Nom de la pizza</label>
 			        </div>
 				</form>
 
@@ -64,10 +74,10 @@
 					 </div>
 				  </div>
 
-              <!-- La charcuterie -->
+              <!-- Les viandes -->
               <div class="card" id="conteneurChacuterie" style="display:none;">
 					 <div id="titreCard">
-						<span><h2>La charcuterie</h2></span>
+						<span><h2>Les viandes</h2></span>
 					 </div>
 					 <div class="card-content conteneurIngredients" id="conteneurIngredients">
 						 <div class="conteneurIngredient"><div id="chorizo"></div>Chorizo</div>
@@ -75,7 +85,8 @@
 					 </div>
 				  </div>
 
-				  <div class="card">
+              <!-- Pizza -->
+				  <div class="card" id="ctnrPizza">
 					 <div class="card-content conteneurIngredients" id="conteneurPizza">
 						 <div id="pizza">
                      <div id="garniturePizza">
@@ -94,6 +105,7 @@
 
           <div class="btnCreaPizza">
                 <a class="btn"><i class="material-icons">shopping_cart</i></a>
+                <a class="btn disabled" id="ingredPred"><i class="material-icons">navigate_before</i></a>
                 <a class="btn disabled" id="ingredSuivant"><i class="material-icons">navigate_next</i></a>
           </div>
 
@@ -101,6 +113,6 @@
        <!-- Import de JavaScript -->
        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
        <script type="text/javascript" src="../js/materialize.min.js"></script>
- 		<script type="text/javascript" src="../js/js.js"></script>
+ 		<script type="text/javascript" src="../js/creationPizza.js"></script>
     </body>
   </html>

@@ -40,7 +40,7 @@
 
 		 <!-- Contenu de la page -->
 
-		 <p class="phraseIntro">Pour quand souhaitez-vous votre pizza ?</p>
+		 <p class="phraseIntro"><strong>Où</strong> et <strong>quand</strong> souhaitez-vous votre pizza ?</p>
 
 		<div class="btnGroup">
 			<p class="btn btnHoraire" id="btnOption1">Maintenant</p>
@@ -49,7 +49,7 @@
 		</div>
 		<div id="mapid" class="carte" style="height: 300px;"></div>
 
-		<a class="btn btnNext" href="creationPizza.html">Suivant</a>
+		<a class="btn btnNext" href="creationPizza.html"><i class="material-icons">navigate_next</i></a>
 
 		<!--JavaScript leaflet-->
 		<script>
@@ -62,19 +62,19 @@
 			}).addTo(mymap);
 
 			L.marker([48.69624, 6.180496]).addTo(mymap)
-				.bindPopup("<b>Restaurant 1 </b>").openPopup();
-
-			L.marker([48.686835, 6.171913]).addTo(mymap)
-				.bindPopup("<b>Restaurant 2 </b>").openPopup();
-
-			L.marker([48.683435, 6.186504]).addTo(mymap)
-				.bindPopup("<b>Restaurant 3 </b>").openPopup();
-
-			L.marker([48.699752, 6.204872]).addTo(mymap)
-				.bindPopup("<b>Restaurant 4 </b>").openPopup();
+				.bindPopup("<b>Gourmand Pizza </b><br />Pepinière</b>").openPopup();
 
 			L.marker([48.703264, 6.173973]).addTo(mymap)
-				.bindPopup("<b>Restaurant 5 </b>").openPopup();
+				.bindPopup("<b>Gourmand Pizza </b><br />Maxéville").openPopup();
+
+			L.marker([48.683435, 6.186404]).addTo(mymap)
+				.bindPopup("<b>Gourmand Pizza </b><br />Jarville").openPopup();
+
+			L.marker([48.699752, 6.204872]).addTo(mymap)
+				.bindPopup("<b>Gourmand Pizza </b><br />Essey-les-Nancy").openPopup();
+
+			L.marker([48.686835, 6.171913]).addTo(mymap)
+				.bindPopup("<b>Gourmand Pizza </b><br />Gare").openPopup();
 
 		</script>
 		<!-- Import de JavaScript -->
