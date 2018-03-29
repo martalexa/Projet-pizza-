@@ -8,6 +8,9 @@ h2{
 nav{
    background-color: #ef5350;
 }
+.pasDansLeMenu{
+   display: none;
+}
 .row{
    margin:0px;
 }
@@ -374,6 +377,9 @@ strong{
 
 .conteneurDuPanier{
    margin-top : 27px;
+}
+.conteneurCompte{
+   margin-top:125px;
 }
 .popUpFinal{
    margin-left: 20px;

@@ -65,5 +65,4 @@ pizza.modules.app = (function (){
       pizza.modules.actions.selectionnerHeure();
    };
 
-
 })();
