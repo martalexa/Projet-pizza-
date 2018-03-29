@@ -4,10 +4,9 @@ pizza.modules = {};
 pizza.modules.actions = (function (){
 
    function init(){
-
       // NavBar
       $('.sidenav').sidenav();
-}
+   }
 
 
    function ajouterCartSimple(e){

@@ -1,3 +1,6 @@
+.bodyChoix{
+   padding-bottom: 30px;
+}
 h2{
    font-size: 15pt;
    margin: 12px;
@@ -17,13 +20,19 @@ strong{
 #bodyScroll{
    overflow: hidden;
 }
+#panier{
+   width:100%;
+   position:fixed;
+   bottom : 0px;
+   z-index:9999;
+}
 .conteneurIngredients{
    text-align: center;
    display: flex;
    justify-content: space-around;
 }
 .breadcrumb, .breadcrumb::before{
-   color:#bbb;
+   color:#b8d6b9;
 }
 .breadEnCours,.breadEnCours::before{
    color:#4CAF50;
@@ -36,10 +45,6 @@ strong{
 #conteneurPizza{
    padding: 0px;
 }
-
-/*#breadLegume, #breadLegume::before, #breadFromage, #breadFromage::before, #breadViande, #breadViande::before{
-   color:grey;
-}*/
 #conteneurIngredients, #selectionsIngredient{
    padding-top:0px;
 }
@@ -207,9 +212,15 @@ strong{
 }
 .btnGroup .active{
    background-color: #4CAF50;
+   color:white;
 }
 .btnGroup .disactive{
+   background-color: #c8e6c9;
+   color: black;
+}
+.btnGroup .disactiveHr{
    background-color: #81c784;
+   color: black;
 }
 
 .btnNext{
@@ -277,11 +288,10 @@ strong{
 	font-size: 20px;
 	font-weight: bold;
 	margin-left: 10px;
+   position: relative;
+   top:8px;
 }
 
-.addPizza{
-	margin: 10px;
-}
 
 .btnValideCommande{
 	width: 100%;
@@ -303,10 +313,12 @@ strong{
 
 .addPizza{
 	font-weight: 900;
+   margin: 10px;
 }
 
 .titreEchant{
 	font-weight: bolder;
+   color: #4CAF50;
 }
 
 .compteNav{
@@ -350,7 +362,19 @@ strong{
   background-color: #f5f5f5;
 }
 
-.itemPizza{
-  border-left: #ffd600 5px solid;
+.itemPizzaComposee{
+  border-left: #64dd17 5px solid;
   margin-top: 5px;
+}
+
+.itemPizzaClassique{
+  border-left: #33691e 5px solid;
+  margin-top: 5px;
+}
+
+.conteneurDuPanier{
+   margin-top : 27px;
+}
+.popUpFinal{
+   margin-left: 20px;
 }

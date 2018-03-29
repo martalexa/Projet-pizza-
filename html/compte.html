@@ -8,6 +8,7 @@
 		 <!--Let browser know website is optimized for mobile-->
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		 <link type="text/css" rel="stylesheet" href="../css/css.css"/>
+       <title>Mon compte | Gourmand Pizza</title>
      <meta charset="utf-8">
 	  </head>
     	<body>
@@ -16,7 +17,7 @@
          <nav>
               <div class="nav-wrapper">
                 <img src="">
-                   <a href="index.html" class="brand-logo" id="titre">Gourmand pizza</a>
+                   <a href="accueil.html" class="brand-logo" id="titre">Gourmand pizza</a>
                    <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
                    <ul class="right hide-on-med-and-down">
                      <li><a href="#">Compte</a></li>
@@ -28,6 +29,7 @@
           </nav>
 
           <ul class="sidenav" id="mobile-demo">
+             <!-- JE PENSE QU'IL FAUDRAIT RAJOUTER L'ACCUEIL NON ? -->
             <li class="compteNav"><a href="#"><i class="small material-icons">contacts</i>Compte</a></li>
             <li class="contactNav"><a href="#"><i class="small material-icons">local_phone</i>Contact</a></li>
             <li class="ingredientNav"><a href="#"><i class="small material-icons">restaurant_menu</i>Ingrédient</a></li>
@@ -38,35 +40,55 @@
 
 
           <div class="titrePanier">
-            <p>MES INFORMATIONS DE COMPTE</p>
+            <p>MES INFORMATIONS PERSONNELLES</p>
           </div>
 
           <div class="row">
 
           <div class="contact col s12">
             <div class="row groupPanier">
-              <p class="col s7 itemPanier nameItem">NOM : </p>
-              <p class="col s5 itemPanier qteItem">Michel</p>
+               <div class="col s4">
+                   <p class="itemPanier nameItem right"><i class="material-icons">face</i></p>
+               </div>
+               <div class="col s7 offset-s1">
+                   <p class="itemPanier qteItem">Michel Philippe</p>
+               </div>
             </div>
+
             <div class="row groupPanier">
-              <p class="col s7 itemPanier nameItem">PRENOM : </p>
-              <p class="col s5 itemPanier qteItem">Philippe</p>
+               <div class="col s4">
+                   <p class="itemPanier nameItem right"><i class="material-icons">email</i></p>
+               </div>
+               <div class="col s7 offset-s1">
+                   <p class="itemPanier qteItem">mp@gmail.com</p>
+               </div>
             </div>
+
             <div class="row groupPanier">
-              <p class="col s7 itemPanier nameItem">ADRESSE MAIL : </p>
-              <p class="col s5 itemPanier qteItem">mp@gmail.com</p>
+               <div class="col s4">
+                   <p class="itemPanier nameItem right"><i class="material-icons">phone</i></p>
+               </div>
+               <div class="col s7 offset-s1">
+                   <p class="itemPanier qteItem">01 23 45 67 89</p>
+               </div>
             </div>
+
             <div class="row groupPanier">
-              <p class="col s7 itemPanier nameItem">TELEPHONE : </p>
-              <p class="col s5 itemPanier qteItem">0123456789</p>
+               <div class="col s7">
+                   <p class="itemPanier nameItem">INSCRIT DEPUIS LE : </p>
+               </div>
+               <div class="col s5">
+                   <p class="itemPanier qteItem" right" style="margin-right : 20px;"">12/12/2017</p>
+               </div>
             </div>
+
             <div class="row groupPanier">
-              <p class="col s7 itemPanier nameItem">INSCRIT DEPUIS LE : </p>
-              <p class="col s5 itemPanier qteItem">12/12/2017</p>
+              <p class="col s7 itemPanier nameItem"></p>
+              <p class="col s5 itemPanier qteItem"></p>
             </div>
           </div>
 
-          <a class="waves-effect waves-light btn btnValideCommande modal-trigger  col s12" href="accueil.html"><i class="large material-icons">navigate_before</i></a>
+          <a class="waves-effect waves-light btn btnValideCommande modal-trigger waves-effect waves-block waves-light col s12" href="accueil.html"><i class="large material-icons">navigate_before</i></a>
 
        </div>
 

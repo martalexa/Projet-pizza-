@@ -8,6 +8,7 @@ pizza.modules.actions = (function (){
       // NavBar
       $('.sidenav').sidenav();
 
+
       // Les modaux
       $('#modal1').modal();
       $('#modal2').modal();
@@ -39,7 +40,7 @@ pizza.modules.actions = (function (){
       $('#btnOption3').css("background-color", "#4CAF50");
    }
 
-   return {init, selectionnerMtn, selectionnerPlusTard, selectionnerHeure, ajouterCart};
+   return {init, selectionnerMtn, selectionnerPlusTard, selectionnerHeure};
 })();
 
 pizza.modules.app = (function (){
@@ -63,5 +64,6 @@ pizza.modules.app = (function (){
    btnOption3.onclick = () =>{
       pizza.modules.actions.selectionnerHeure();
    };
+
 
 })();
