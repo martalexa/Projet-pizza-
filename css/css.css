@@ -212,7 +212,6 @@ strong{
    background-color: #81c784;
 }
 
-
 .btnNext{
 	margin-top: 10px;
 	width: 100%;
@@ -220,6 +219,26 @@ strong{
 
 .carte{
 	width: 100%;
+}
+
+.iconPanierPopUp{
+   position: relative;
+   padding : 4px 8px;
+   background-color:#c8e6c9;
+   border-radius: 3px;
+   bottom: -111px;
+}
+.iconPanier{
+   padding : 4px 8px;
+   background-color:#c8e6c9;
+   border-radius: 3px;
+   color:#444;
+}
+.dejaAjouterPanier{
+   padding : 4px 8px;
+   background-color:#4CAF50;
+   border-radius: 3px;
+   color:white;
 }
 
 .groupPanier .itemPanier{

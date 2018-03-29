@@ -19,7 +19,6 @@ pizza.modules.actions = (function (){
       $('#btnOption1').css("background-color", "#4CAF50");
       $('#btnOption2').css("background-color", "#81c784");
       $('#btnOption3').css("background-color", "#81c784");
-
    }
 
    function selectionnerMtn(){
@@ -40,7 +39,7 @@ pizza.modules.actions = (function (){
       $('#btnOption3').css("background-color", "#4CAF50");
    }
 
-   return {init, selectionnerMtn, selectionnerPlusTard, selectionnerHeure};
+   return {init, selectionnerMtn, selectionnerPlusTard, selectionnerHeure, ajouterCart};
 })();
 
 pizza.modules.app = (function (){
