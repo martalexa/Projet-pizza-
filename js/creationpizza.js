@@ -122,11 +122,17 @@ pizza.modules.actions = (function (){
       $("#breadViande::before").removeClass("breadEncours");
 
    }
+   function coDeco(e){
+      $('#navDeco').toggleClass("pasDansLeMenu");
+      $('#navCo').toggleClass("pasDansLeMenu");
+   }
 
-   return {init, debutDrag, finDrag, nextIngredient, predIngredient};
+   return {init, debutDrag, finDrag, nextIngredient, predIngredient, coDeco};
 })();
 
 pizza.modules.app = (function (){
+   let nvCo = ('#navCo')
+   let nvDCo = ('#navDeco')
 
    ingrdSuivant = ("ingredSuivant");
    flecheNextIngred = $("#ingredSuivant");
@@ -200,6 +206,15 @@ pizza.modules.app = (function (){
    };
    breadBase.onclick =()=>{
       pizza.modules.actions.predIngredient();
+   };
+
+
+   // Ajouter au panier depuis le card
+   navCo.onclick = () =>{
+      pizza.modules.actions.coDeco();
+   };
+   navDeco.onclick = () =>{
+      pizza.modules.actions.coDeco();
    };
 
 })();

@@ -19,17 +19,20 @@
    			        <li><a href="#">Compte</a></li>
    			        <li><a href="#">Contact</a></li>
    			        <li><a href="#">Ingrédient</a></li>
-   			        <li><a href="#">Deconnexion</a></li>
+                    <li class="decoNav pasDansLeMenu" id="navCo"><a onclick="M.toast({html: 'Vous êtes connecté'})"><i class="small material-icons">settings_power</i>Connexion</a></li>
+                   <li class="decoNav" id="navDeco"><a onclick="M.toast({html: 'Vous êtes déconnecté'})"><i class="small material-icons">settings_power</i>Deconnexion</a></li>
+
    		      	</ul>
    		    </div>
    	  	</nav>
 
-   	  	<ul class="sidenav" id="mobile-demo">
-   		    <li><a href="#">Compte</a></li>
-   		    <li><a href="#">Contact</a></li>
-   		    <li><a href="#">Ingrédient</a></li>
-   		    <li><a href="#">Deconnexion</a></li>
-   	  	</ul>
+         <ul class="sidenav" id="mobile-demo">
+           <li class="compteNav"><a href="compte.html"><i class="small material-icons">contacts</i>Compte</a></li>
+           <li class="contactNav"><a href="contact.html"><i class="small material-icons">local_phone</i>Contact</a></li>
+           <li class="ingredientNav"><a href="ingredient.html"><i class="small material-icons">restaurant_menu</i>Ingrédient</a></li>
+           <li class="decoNav pasDansLeMenu" id="navCo"><a onclick="M.toast({html: 'Vous êtes connecté'})"><i class="small material-icons">settings_power</i>Connexion</a></li>
+           <li class="decoNav" id="navDeco"><a onclick="M.toast({html: 'Vous êtes déconnecté'})"><i class="small material-icons">settings_power</i>Deconnexion</a></li>
+         </ul>
 
          <!-- Choix de quelle sorte de pizza prendre -->
 
@@ -107,7 +110,7 @@
           <div class="btnCreaPizza">
                 <a href="panier.html" class="btn waves-effect waves-block waves-light"><i class="material-icons">shopping_cart</i></a>
                 <a class="btn disabled waves-effect waves-block waves-light" id="ingredPred"><i class="material-icons">navigate_before</i></a>
-                <a class="btn disabled waves-effect waves-block waves-light" id="ingredSuivant"><i class="material-icons">navigate_next</i></a>
+                <a class="btn disabled waves-effect waves-block waves-light" id="ingredSuivant">8.30€<i class="material-icons">navigate_next</i></a>
           </div>
 
 
@@ -115,6 +118,5 @@
        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
        <script type="text/javascript" src="../js/materialize.min.js"></script>
  		<script type="text/javascript" src="../js/creationPizza.js"></script>
-      <script type="text/javascript" src="../js/nav.js"></script>
     </body>
   </html>

@@ -21,9 +21,14 @@ pizza.modules.actions = (function (){
       $(e.path[3].children[1].children[0].children[1]).toggleClass("dejaAjouterPanier");
    }
 
+   function coDeco(e){
+      $('#navDeco').toggleClass("pasDansLeMenu");
+      $('#navCo').toggleClass("pasDansLeMenu");
+   }
 
 
-   return {init, ajouterCartSimple, ajouterCartPopUp};
+
+   return {init, ajouterCartSimple, ajouterCartPopUp, coDeco};
 })();
 
 pizza.modules.app = (function (){
@@ -38,6 +43,9 @@ pizza.modules.app = (function (){
    let btnAjoutPanierPopUp4 = ('#ajoutPanierPopUp4')
    let btnAjoutPanier5 = ('#ajoutPanier5')
    let btnAjoutPanierPopUp5 = ('#ajoutPanierPopUp5')
+
+   let nvCo = ('#navCo')
+   let nvDCo = ('#navDeco')
 
 
    // Initialisation des parametres
@@ -76,6 +84,14 @@ pizza.modules.app = (function (){
    };
    ajoutPanierPopUp5.onclick = (e) =>{
       pizza.modules.actions.ajouterCartPopUp(e);
+   };
+
+   // Ajouter au panier depuis le card
+   navCo.onclick = () =>{
+      pizza.modules.actions.coDeco();
+   };
+   navDeco.onclick = () =>{
+      pizza.modules.actions.coDeco();
    };
 
 })();
